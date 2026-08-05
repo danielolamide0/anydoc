@@ -52,8 +52,8 @@
   },
   "scripts": {
     "artifacts": "napi artifacts",
-    "build": "napi build --platform --release",
-    "build:debug": "napi build --platform",
+    "build": "node init && napi build --platform --release",
+    "build:debug": "node init && napi build --platform",
     "prepublishOnly": "napi prepublish -t npm --no-gh-release",
     "test": "node --test",
     "version": "napi version"
